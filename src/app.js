@@ -7,13 +7,13 @@
     return;
   }
 
-  var socialIconMarkup = {
-    home: '<path d="m3.5 9.4 6.5-5.3 6.5 5.3v6.1a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1V9.4Z"/><path d="M7.5 16.5v-4h5v4"/>',
-    threads: '<path d="M15.7 11.2c0-3.6-2.1-5.8-5.6-5.8-3.8 0-5.9 2.5-5.9 6 0 3.7 2.3 6 6 6 2.5 0 4.5-1.3 5.2-3.3.4-1.3-.1-2.5-1.3-3.1-1.7-.9-4.2-.3-5.4.7"/><path d="M8.5 11.7c1.5-1.2 4.8-1.5 6.7-.5 1.2.6 1.9 1.6 1.9 2.8"/>',
-    instagram: '<rect x="3.5" y="3.5" width="13" height="13" rx="3"/><circle cx="10" cy="10" r="3.1"/><circle cx="14.2" cy="5.8" r=".7" fill="currentColor" stroke="none"/>',
-    x: '<path d="M4 4.2 16 15.8M16 4.2 4 15.8"/>',
-    linkedin: '<rect x="3.5" y="3.5" width="13" height="13" rx="1.5"/><path d="M6.5 8.5v5M6.5 6.4v.1M9.5 13.5v-3c0-1.2.7-2 1.8-2s1.7.7 1.7 2v3M9.5 8.6v4.9"/>'
-  };
+  var socialIconPaths = {
+    home: "./assets/icon-ARCOA.svg",
+    threads: "./assets/icon-threads.svg",
+    instagram: "./assets/icon-insta.svg",
+    x: "./assets/icon-x.svg",
+    linkedin: "./assets/icon-linkedin.svg"
+  };  
 
   var setText = function (selector, value) {
     var element = document.querySelector(selector);
@@ -44,13 +44,15 @@
   };
 
   var createSocialIcon = function (name) {
-    var icon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-    icon.setAttribute("viewBox", "0 0 20 20");
+    var icon = document.createElement("img");
+  
+    icon.className = "social-icon";
+    icon.src = socialIconPaths[name] || socialIconPaths.home;
+    icon.alt = "";
     icon.setAttribute("aria-hidden", "true");
-    icon.setAttribute("focusable", "false");
-    icon.innerHTML = socialIconMarkup[name] || socialIconMarkup.home;
+  
     return icon;
-  };
+  };  
 
   document.title = data.site.title;
   setMeta('meta[name="description"]', data.site.description);
