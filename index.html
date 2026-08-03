@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#FAF8F7" />
+    <meta name="description" content="ARCOA · Archive of Calm" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ARCOA" />
+    <meta property="og:title" content="ARCOA — Archive of Calm" />
+    <meta property="og:description" content="ARCOA · Archive of Calm" />
+    <meta property="og:url" content="https://now.arcoa.kr/" />
+    <meta property="og:image" content="https://now.arcoa.kr/assets/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ARCOA — Archive of Calm" />
+    <meta name="twitter:description" content="ARCOA · Archive of Calm" />
+    <meta name="twitter:image" content="https://now.arcoa.kr/assets/og-image.png" />
+    <link rel="canonical" href="https://now.arcoa.kr/" />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="./assets/LINESeedKR-Rg.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./assets/LINESeedKR-Bd.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>ARCOA — Archive of Calm</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+
+    <div class="site-shell">
+      <header class="hero" aria-labelledby="hero-title">
+        <a class="hero-brand" data-hero-brand>
+          <img data-hero-logo src="./assets/ARCOA-header.png" alt="ARCOA" />
+          <span class="hero-title" id="hero-title" data-hero-title>Archive of Calm</span>
+        </a>
+        <a class="hero-url" data-hero-url-link data-hero-url>arcoa.kr ↗</a>
+      </header>
+
+      <main id="main-content">
+        <section class="section" aria-labelledby="services-heading">
+          <div class="section-heading">
+            <h2 id="services-heading" data-services-title>SERVICES</h2>
+          </div>
+          <div class="service-list" data-services></div>
+        </section>
+
+        <section class="section" aria-labelledby="explore-heading">
+          <div class="section-heading">
+            <h2 id="explore-heading" data-explore-title>EXPLORE</h2>
+          </div>
+          <div class="explore-list" data-explore></div>
+        </section>
+
+        <section class="section" aria-labelledby="featured-heading">
+          <div class="section-heading">
+            <h2 id="featured-heading" data-featured-title>FEATURED</h2>
+          </div>
+          <a class="featured-card" data-featured-card>
+            <span class="featured-copy">
+              <span class="featured-heading" data-featured-heading>앱인토스</span>
+              <span class="featured-story" data-featured-story>앱인토스 파트너 스토리</span>
+              <span class="featured-description" data-featured-description>앱인토스 파트너 스토리 / 다시 회사로 돌아가는 대신, 혼자 미니앱을 만들기로…</span>
+            </span>
+            <span class="featured-partner" data-featured-partner>Apps in Toss ↗</span>
+          </a>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <a class="footer-brand" data-footer-brand>
+          <img data-footer-logo src="./assets/ARCOA-footer.png" alt="ARCOA" />
+        </a>
+        <p data-footer-representative>대표: 박지안</p>
+        <p data-footer-email>문의: help@arcoa.kr</p>
+        <nav class="social-list" data-socials aria-label="ARCOA 소셜 링크"></nav>
+        <p class="footer-copyright" data-footer-copyright>© 2026 ARCOA ✦ Archive of Calm.</p>
+      </footer>
+    </div>
+
+    <noscript>
+      <div class="noscript-message">이 페이지를 보려면 브라우저에서 JavaScript를 허용해 주세요.</div>
+    </noscript>
+
+    <script src="./src/data.js"></script>
+    <script src="./src/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "arcoa-link-hub",
+  "private": true,
+  "version": "0.1.0",
+  "description": "ARCOA Archive of Calm link hub",
+  "scripts": {
+    "build": "node scripts/check-static.mjs",
+    "lint": "node --check src/data.js && node --check src/app.js",
+    "dev": "node scripts/server.mjs"
+  }
+}
