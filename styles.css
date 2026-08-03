@@ -66,7 +66,7 @@ a {
 }
 
 .site-shell {
-  width: min(calc(100% - 70px), 480px);
+  width: min(calc(100% - 48px), 480px);
   margin: 0 auto;
 }
 
@@ -129,7 +129,7 @@ a {
 }
 
 .section {
-  padding-top: 50px;
+  padding-top: 48px;
 }
 
 .section-heading {
@@ -142,7 +142,7 @@ a {
   z-index: 1;
   display: inline-block;
   margin: 0;
-  padding: 0 0 4px 0;
+  padding: 0 0 5px 0;
   left: 1px;
   font-size: 15px;
   font-weight: 700;
@@ -152,8 +152,8 @@ a {
 
 .section-heading h2::after {
   position: absolute;
-  right: 1px;
-  bottom: -0.5px;
+  right: 2px;
+  bottom: 0;
   left: -1px;
   z-index: -1;
   height: 12px;
@@ -226,10 +226,10 @@ a {
 .service-title,
 .explore-description,
 .featured-story {
-  margin: 15px 0 3px;
+  margin: 12px 0 5px;
   font-size: 16.5px;
   font-weight: 700;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.02em;
   line-height: 1.35;
 }
 
@@ -247,7 +247,7 @@ a {
 .explore-meta,
 .featured-partner {
   color: var(--link);
-  font-size: 15px;
+  font-size: 14px;
   letter-spacing: 0.01em;
   line-height: 1.35;
   text-align: right;
@@ -389,7 +389,7 @@ a {
 
 @media (min-width: 700px) {
   .site-shell {
-    width: min(calc(100% - 48px), 520px);
+    width: min(calc(100% - 48px), 480px);
   }
 
 }
