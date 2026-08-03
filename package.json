@@ -6,6 +6,10 @@
   "scripts": {
     "build": "node scripts/check-static.mjs",
     "lint": "node --check src/data.js && node --check src/app.js",
-    "dev": "node scripts/server.mjs"
+    "dev": "live-server --host=127.0.0.1 --port=4173 --open=index.html --watch=.",
+    "deploy": "git push origin main"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
   }
 }
