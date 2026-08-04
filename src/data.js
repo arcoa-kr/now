@@ -22,8 +22,8 @@ window.ARCOA_DATA = {
       number: "01",
       englishName: "arcoi",
       koreanName: "아르코이",
-      title: "하루 한 장, 타로일기",
-      description: "마음돌봄 × 타로일기 × 공감",
+      title: "",
+      description: "하루 한 장, 타로일기",
       url: "https://arcoi.arcoa.kr",
       urlLabel: "arcoi.arcoa.kr ↗",
       status: "",
@@ -33,8 +33,8 @@ window.ARCOA_DATA = {
       number: "02",
       englishName: "peeca",
       koreanName: "피카",
-      title: "내 카드 얼마나 할인돼?",
-      description: "선택의 순간을 가볍고 명료하게",
+      title: "",
+      description: "내 카드 얼마나 할인돼?",
       url: "https://peeca.arcoa.kr",
       urlLabel: "peeca.arcoa.kr ↗",
       status: "",
@@ -55,8 +55,8 @@ window.ARCOA_DATA = {
   explore: [
     {
       label: "Wallpaper",
-      description: "매달 찾아오는 마법같은 월페이퍼",
-      detail: "아르코이 마스터가 전하는 행운의 타로",
+      description: "",
+      detail: "아르코이의 타로 월페이퍼",
       url: "https://arcoa.kr/wallpaper",
       urlLabel: "arcoa.kr/wallpaper ↗"
     },
@@ -74,9 +74,9 @@ window.ARCOA_DATA = {
   ],
   featured: {
     heading: "앱인토스",
-    title: "앱인토스 파트너 스토리",
+    title: "",
     partnerLabel: "Apps in Toss ↗",
-    description: "다시 회사로 돌아가는 대신, 혼자 미니앱을 만들기로…",
+    description: "파트너 스토리 — 출시 이후의 이야기",
     url: "https://toss.im/apps-in-toss/blog/arcoi"
   },
   footer: {
