@@ -71,7 +71,7 @@ a {
 }
 
 .hero {
-  min-height: 203px;
+  min-height: 198px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,14 +122,14 @@ a {
 }
 
 .hero-url {
-  margin-top: 12px;
+  margin-top: 4px;
   color: var(--text);
   font-size: 15px;
   font-weight: 700;
 }
 
 .section {
-  padding-top: 48px;
+  padding-top: 56px;
 }
 
 .section-heading {
@@ -202,7 +202,7 @@ a {
 }
 
 .service-english-name {
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
@@ -237,7 +237,7 @@ a {
 .explore-detail,
 .featured-description {
   color: var(--link);
-  font-size: 16px;
+  font-size: 15.5px;
   letter-spacing: -0.02em;
   line-height: 1.35;
 }
@@ -326,7 +326,7 @@ a {
 }
 
 .site-footer {
-  padding: 45px 0 30px;
+  padding: 60px 0 30px;
 }
 
 .footer-brand {
@@ -349,7 +349,7 @@ a {
 }
 
 .site-footer .footer-copyright {
-  margin-top: 9px;
+  margin-top: 24px;
   color: var(--link);
   font-size: 14px;
 }

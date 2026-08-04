@@ -65,7 +65,6 @@
   setMeta('meta[name="twitter:image"]', data.site.ogImage);
 
   setText("[data-hero-title]", data.hero.title);
-  setText("[data-hero-url]", data.hero.linkLabel + " ↗");
   setText("[data-services-title]", data.labels.services);
   setText("[data-explore-title]", data.labels.explore);
   setText("[data-featured-title]", data.labels.featured);
