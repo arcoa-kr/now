@@ -226,7 +226,7 @@ a {
 .service-title,
 .explore-description,
 .featured-story {
-  margin-top: 10px;
+  margin-top: 8px;
   font-size: 16.5px;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -351,7 +351,7 @@ a {
 .site-footer .footer-copyright {
   margin-top: 24px;
   color: var(--link);
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .social-list {

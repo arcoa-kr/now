@@ -45,7 +45,7 @@ window.ARCOA_DATA = {
       englishName: "tagbit",
       koreanName: "태그빗",
       title: "",
-      description: "나를 이해하는 기록 앱",
+      description: "나를 이해하는 기록",
       url: "",
       urlLabel: "",
       status: "coming soon",
