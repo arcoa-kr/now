@@ -6,9 +6,9 @@ window.ARCOA_DATA = {
     ogImage: "https://now.arcoa.kr/assets/og-image.png"
   },
   labels: {
-    services: "SERVICES",
-    explore: "EXPLORE",
-    featured: "FEATURED"
+    services: "APPS",
+    explore: "GOODS",
+    featured: "STORIES"
   },
   hero: {
     brandUrl: "https://arcoa.kr",
