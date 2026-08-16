@@ -171,8 +171,8 @@ a {
 
 .service-row {
   position: relative;
-  grid-template-columns: 20px minmax(0, 1fr);
-  column-gap: 10px;
+  grid-template-columns: 0px minmax(0, 1fr);
+  column-gap: 0px;
   align-items: start;
   min-height: 92px;
   padding: 20px 0;
@@ -227,7 +227,7 @@ a {
 .explore-description,
 .featured-story {
   margin-top: 8px;
-  font-size: 16.5px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.35;
@@ -237,7 +237,7 @@ a {
 .explore-detail,
 .featured-description {
   color: var(--link);
-  font-size: 15.5px;
+  font-size: 15px;
   letter-spacing: -0.02em;
   line-height: 1.35;
 }
@@ -301,7 +301,7 @@ a {
 .featured-heading {
   display: block;
   max-width: calc(100% - 48px);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.1;

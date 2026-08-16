@@ -19,18 +19,18 @@ window.ARCOA_DATA = {
   },
   services: [
     {
-      number: "01",
+      number: "",
       englishName: "arcoi",
       koreanName: "아르코이",
       title: "",
-      description: "하루 한 장, 타로일기",
+      description: "하루 한 장, 오늘의 타로 · 마음의 기록",
       url: "https://arcoi.arcoa.kr",
       urlLabel: "arcoi.arcoa.kr ↗",
       status: "",
       featured: false
     },
     {
-      number: "02",
+      number: "",
       englishName: "peeca",
       koreanName: "피카",
       title: "",
@@ -41,7 +41,7 @@ window.ARCOA_DATA = {
       featured: false
     },
     {
-      number: "03",
+      number: "",
       englishName: "tagbit",
       koreanName: "태그빗",
       title: "",
