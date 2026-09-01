@@ -66,7 +66,7 @@ a {
 }
 
 .site-shell {
-  width: min(calc(100% - 48px), 480px);
+  width: min(calc(100% - 56px), 480px);
   margin: 0 auto;
 }
 
@@ -202,7 +202,7 @@ a {
 }
 
 .service-english-name {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
@@ -227,7 +227,7 @@ a {
 .explore-description,
 .featured-story {
   margin-top: 8px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.35;
@@ -301,7 +301,7 @@ a {
 .featured-heading {
   display: block;
   max-width: calc(100% - 48px);
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.1;
@@ -357,7 +357,7 @@ a {
 .social-list {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
   margin-top: 24px;
 }
 
