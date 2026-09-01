@@ -23,7 +23,7 @@ window.ARCOA_DATA = {
       englishName: "arcoi",
       koreanName: "아르코이",
       title: "",
-      description: "하루 한 장, 오늘의 타로 · 마음의 기록",
+      description: "하루 한 장, 오늘의 타로 · 마음일기",
       url: "https://arcoi.arcoa.kr",
       urlLabel: "arcoi.arcoa.kr ↗",
       status: "",
