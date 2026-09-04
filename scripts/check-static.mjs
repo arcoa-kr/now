@@ -33,7 +33,7 @@ for (const reference of [
   "./assets/ARCOA-footer.png",
   "./assets/LINESeedKR-Rg.woff2",
   "./assets/LINESeedKR-Bd.woff2",
-  "assets/og-image.png"
+  "assets/og-ARCOA.png"
 ]) {
   if (!html.includes(reference)) {
     throw new Error(`Missing HTML reference: ${reference}`);
