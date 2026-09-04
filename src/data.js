@@ -3,7 +3,7 @@ window.ARCOA_DATA = {
     title: "ARCOA — Archive of Calm",
     description: "ARCOA · Archive of Calm",
     url: "https://now.arcoa.kr/",
-    ogImage: "https://now.arcoa.kr/assets/og-image.png"
+    ogImage: "https://now.arcoa.kr/assets/og-ARCOA.png"
   },
   labels: {
     services: "APPS",
