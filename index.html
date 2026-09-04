@@ -6,18 +6,20 @@
     <meta name="theme-color" content="#FAF8F7" />
 
     <title>ARCOA NOW — Official Hub</title>
-    <meta name="description" content="아르코아의 최신 정보를 확인하세요." />
+    <meta name="description" content="아르코아의 최신 정보를 확인해 보세요." />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="ko_KR" />
     <meta property="og:site_name" content="ARCOA" />
     <meta property="og:title" content="ARCOA NOW — Official Hub" />
-    <meta property="og:description" content="아르코아의 최신 정보를 확인하세요." />
+    <meta property="og:description" content="아르코아의 최신 정보를 확인해 보세요." />
     <meta property="og:url" content="https://now.arcoa.kr/" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:image" content="https://now.arcoa.kr/assets/og-ARCOA.png" />
     <meta property="og:image:alt" content="ARCOA NOW — Official Hub" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="ARCOA NOW — Official Hub" />
-    <meta name="twitter:description" ccontent="아르코아의 최신 정보를 확인하세요." />
+    <meta name="twitter:description" ccontent="아르코아의 최신 정보를 확인해 보세요." />
     <meta name="twitter:image" content="https://now.arcoa.kr/assets/og-ARCOA.png" />
     <meta name="twitter:image:alt" content="ARCOA NOW — Official Hub" />
     <link rel="canonical" href="https://now.arcoa.kr/" />
@@ -29,11 +31,51 @@
   <body>
     <a class="skip-link" href="#main-content">본문으로 바로가기</a>
       <header class="hero" aria-labelledby="hero-title">
-        <a class="hero-brand" data-hero-brand>
-          <img data-hero-logo src="./assets/ARCOA-header.png" alt="ARCOA" />
-          <span class="hero-title" id="hero-title" data-hero-title>Archive of Calm</span>
-        </a>
-        <a class="hero-url" data-hero-url-link data-hero-url>arcoa.kr</a>
+        <div class="hero-actions">
+          <a
+            class="hero-home"
+            href="https://arcoa.kr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="새 창에서 ARCOA 홈페이지 열기"
+            data-hero-url-link
+          >
+            <img
+              src="./assets/icon-ARCOA.svg"
+              alt="ARCOA 홈페이지로 이동"
+              aria-hidden="true"
+            />
+            <span data-hero-url hidden>arcoa.kr</span>
+          </a>
+        
+          <button
+            class="hero-share"
+            type="button"
+            aria-label="현재 페이지 공유하기"
+            data-share-button
+          >
+            <img
+              src="./assets/icon-share.svg"
+              alt="현재 페이지 공유하기"
+              aria-hidden="true"
+            />
+          </button>
+        </div>        
+
+        <div class="hero-brand" data-hero-brand>
+          <img
+            class="hero-logo"
+            src="./assets/ARCOA-header.png"
+            alt="ARCOA 로고"
+            data-hero-logo
+          />
+          <p class="hero-tagline" data-hero-tagline>
+            일상을 다정하고 명료하게
+          </p>
+          <h1 class="hero-title" id="hero-title" data-hero-title>
+            아르코아
+          </h1>
+        </div>
       </header>
 
     <div class="site-shell">

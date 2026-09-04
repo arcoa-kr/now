@@ -11,11 +11,11 @@ window.ARCOA_DATA = {
     featured: "STORIES"
   },
   hero: {
-    brandUrl: "https://arcoa.kr",
+    brandUrl: "https://arcoa.kr/",
     logo: "./assets/ARCOA-header.png",
-    logoAlt: "ARCOA",
-    title: "Archive of Calm",
-    linkLabel: "arcoa.kr"
+    logoAlt: "ARCOA 로고",
+    tagline: "일상을 다정하고 명료하게",
+    title: "아르코아"
   },
   services: [
     {

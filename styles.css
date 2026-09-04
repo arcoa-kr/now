@@ -48,6 +48,11 @@ a {
   color: inherit;
 }
 
+::selection {
+  background: #F0D8D5;
+  color: #111111;
+}
+
 .skip-link {
   position: fixed;
   top: 12px;
@@ -89,43 +94,91 @@ a {
   text-decoration: none;
 }
 
-.hero-brand {
-  display: inline-flex;
-  flex-direction: column;
+.hero-actions {
+  position: absolute;
+  top: 6px;
+  left: 18px;
+  right: 20px;
+  display: flex;
   align-items: center;
-  min-width: 44px;
+  justify-content: space-between;
+  z-index: 1;
 }
 
-.hero-brand:focus-visible,
-.hero-url:focus-visible,
-.footer-brand:focus-visible,
-.featured-card:focus-visible,
-.explore-row:focus-visible,
-.service-row:focus-visible,
-.social-link:focus-visible,
-.locale-link:focus-visible {
-  outline: 2px solid var(--link);
-  outline-offset: 5px;
+.hero-home,
+.hero-share {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  appearance: none;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--social);
+  cursor: pointer;
+}
+
+.hero-home img,
+.hero-share img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.hero-home:hover,
+.hero-share:hover,
+.social-link:hover {
+  background: #F3E7E5;
+}
+
+.hero-home:active,
+.hero-share:active,
+.social-link:active {
+  background: #E0AA9F;
+}
+
+/* 키보드 Tab 이동 시: 모든 링크와 버튼에 동일한 포커스 표시 */
+a:focus-visible,
+button:focus-visible {
+  outline: 1.5px solid #E0AA9F;
+  outline-offset: 4px;
+  box-shadow: none;
+}
+
+/* 마우스 또는 터치로 클릭한 뒤에는 포커스 테두리를 보이지 않게 함 */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
 }
 
 .hero-brand img {
   display: block;
   width: 88px;
   height: 88px;
+  margin: 42px auto 0;
   object-fit: contain;
 }
 
-.hero-title {
-  margin-top: 10px;
+.hero-tagline {
+  margin: 18px 0 0;
   color: var(--link);
-  font-size: 13px;
+  font-size: 15px;
+}
+
+.hero-title {
+  margin: 0 0 24px;
+  color: var(--link);
+  font-size: 15px;
 }
 
 .hero-url {
   margin-top: 4px;
   color: var(--text);
   font-size: 15px;
-  font-weight: 700;
 }
 
 .section {
@@ -331,7 +384,7 @@ a {
 
 .footer-brand {
   display: block;
-  width: 92px;
+  width: 56px;
 }
 
 .footer-brand img {
@@ -357,16 +410,17 @@ a {
 .social-list {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
   margin-top: 24px;
 }
 
 .social-link {
   display: inline-grid;
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   place-items: center;
   color: var(--social);
+  border-radius: 8px;
 }
 
 .social-link svg {

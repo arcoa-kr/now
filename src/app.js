@@ -72,17 +72,37 @@
   setText("[data-footer-email]", "문의: " + data.footer.email);
   setText("[data-footer-copyright]", data.footer.copyright);
 
-  var heroBrand = document.querySelector("[data-hero-brand]");
   var heroLogo = document.querySelector("[data-hero-logo]");
+  var heroHome = document.querySelector("[data-hero-url-link]");
   var footerBrand = document.querySelector("[data-footer-brand]");
   var footerLogo = document.querySelector("[data-footer-logo]");
-  applyExternalLink(heroBrand, data.hero.brandUrl, "ARCOA 홈페이지");
-  applyExternalLink(document.querySelector("[data-hero-url-link]"), data.hero.brandUrl, "arcoa.kr 홈페이지");
-  applyExternalLink(footerBrand, data.footer.brandUrl, "ARCOA 홈페이지");
-  heroLogo.src = data.hero.logo;
-  heroLogo.alt = data.hero.logoAlt;
-  footerLogo.src = data.footer.logo;
-  footerLogo.alt = data.footer.logoAlt;
+  
+  /* 상단 왼쪽 아이콘: 새 창에서 arcoa.kr 열기 */
+  if (heroHome) {
+    heroHome.href = data.hero.brandUrl || "https://arcoa.kr/";
+    heroHome.target = "_blank";
+    heroHome.rel = "noopener noreferrer";
+    heroHome.setAttribute("aria-label", "새 창에서 ARCOA 홈페이지 열기");
+  }
+  
+  /* HERO 중앙 로고 */
+  if (heroLogo) {
+    heroLogo.src = data.hero.logo;
+    heroLogo.alt = data.hero.logoAlt;
+  }
+  
+  /* Footer 로고: 새 창에서 arcoa.kr 열기 */
+  if (footerBrand) {
+    footerBrand.href = data.footer.brandUrl || "https://arcoa.kr/";
+    footerBrand.target = "_blank";
+    footerBrand.rel = "noopener noreferrer";
+    footerBrand.setAttribute("aria-label", "새 창에서 ARCOA 홈페이지 열기");
+  }
+  
+  if (footerLogo) {
+    footerLogo.src = data.footer.logo;
+    footerLogo.alt = data.footer.logoAlt;
+  }  
 
   var serviceList = document.querySelector("[data-services]");
   data.services.forEach(function (service) {
@@ -168,3 +188,30 @@
     socialList.appendChild(link);
   });
 })();
+
+var shareButton = document.querySelector("[data-share-button]");
+
+if (shareButton) {
+  shareButton.addEventListener("click", async function () {
+    var shareData = {
+      title: "ARCOA NOW — Official Hub",
+      text: "ARCOA의 제품과 최신 소식을 확인하세요.",
+      url: window.location.href
+    };
+
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+        return;
+      }
+
+      await navigator.clipboard.writeText(window.location.href);
+      window.alert("링크를 복사했어요.");
+    } catch (error) {
+      /* 사용자가 공유창을 닫은 경우에는 아무 동작도 하지 않음 */
+      if (error && error.name !== "AbortError") {
+        window.alert("링크를 복사하지 못했어요.");
+      }
+    }
+  });
+}
