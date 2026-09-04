@@ -9,7 +9,7 @@ const requiredFiles = [
   "src/data.js",
   "src/app.js",
   "assets/favicon.svg",
-  "assets/og-image.png",
+  "assets/og-ARCOA.png",
   "assets/ARCOA-header.png",
   "assets/ARCOA-footer.png",
   "assets/LINESeedKR-Rg.woff2",
