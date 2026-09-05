@@ -38,8 +38,6 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: "LINE Seed KR";
-  font-size: 16px;
-  line-height: 1.55;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -76,7 +74,7 @@ a {
 }
 
 .hero {
-  min-height: 198px;
+  min-height: 222px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,7 +157,7 @@ button:focus:not(:focus-visible) {
   display: block;
   width: 88px;
   height: 88px;
-  margin: 42px auto 0;
+  margin: 48px auto 0;
   object-fit: contain;
 }
 
@@ -170,7 +168,7 @@ button:focus:not(:focus-visible) {
 }
 
 .hero-title {
-  margin: 0 0 24px;
+  margin: 4px 0 26px;
   color: var(--link);
   font-size: 15px;
 }
